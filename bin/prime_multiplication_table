@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'prime_multiplication_table'
+first_argument = ARGV.first
+
+
+if first_argument.to_i > 0
+  num_primes = first_argument.to_i
+elsif first_argument.nil?
+  num_primes = 10 # Default is ten
+else
+  puts "#{$0}: illegal argument #{first_argument}"
+  puts "usage: #{$0} [number]"
+  exit
+end
+
+table = PrimeMultiplicationTable.first_n(num_primes)
+PrimeMultiplicationTable.print_table(table)
