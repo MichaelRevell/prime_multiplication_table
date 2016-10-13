@@ -9,13 +9,18 @@ first argument of the command.
 ## Install
 
 `gem build prime_multiplication_table.gemspec`
+
 `install prime_multiplication_table-0.0.1.gem`
+
 
 ## Development & Testing
 
 `bundle install`
+
 `gem build prime_multiplication_table.gemspec`
+
 `install prime_multiplication_table-0.0.1.gem`
+
 `ruby ./test/prime_multiplication_table.rb`
 
 ## Examples
